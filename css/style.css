@@ -1,0 +1,479 @@
+@charset "utf-8";
+
+/*----------------------------------------
+COMMON
+----------------------------------------*/
+
+body {
+    font-family:"BIZ UDPGothic";
+    background-color: #FFFFCC;
+    margin: 0 auto;
+    color: #222222;
+    text-align: justify;
+    text-align: inter-deograph;
+}
+
+p {
+    margin: 30px 0 0;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.subtitle-h2 {
+    margin: 150px 0 30px;
+    font-size: 24px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.subtitle-h3 {
+    margin: 30px 0 30px;
+    font-size: 18px;
+    text-align: center;
+    color: #000099;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    margin: 0 auto;
+    background-color:#000099;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    text-decoration: none;
+}
+
+.btn:hover {
+    opacity: 0.5;
+}
+
+/* 以下、ラーニングより備忘*/
+
+/* img {
+    max-width: 100%;
+    height: auto;
+} */
+
+
+/* input,
+textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+} */
+
+
+/*----------------------------------------
+HEADER
+----------------------------------------*/
+
+/*--------------------
+HEADER-LOGO 
+--------------------*/
+
+.header {
+    background-color: white;
+    display: flex;
+    justify-content: Space-between;
+}
+
+.logo {
+    margin: 5px;
+}
+
+.header a {
+    text-decoration: none;
+    color: #222222;
+}
+
+
+/*-----------------------
+NAV 
+-----------------------*/
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li {
+    padding: 50px 50px 50px 0px;
+    font-size: 21px;
+}
+
+#sign-up-blue {
+    color: blue;
+}
+
+#log-in-blue {
+    color: blue;
+}
+
+
+/*----------------------------------------
+MAIN
+----------------------------------------*/
+
+
+/*-----------------------
+TOP_IMAGE 
+-----------------------*/
+
+.top_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    margin: 0 0 10px;
+    background-image: url("../img/mainbg.jpg");
+    background-position: center;
+    /*filter: drop-shadow(7px 7px 7px #aaa);*/
+}
+
+.top_image h1 {
+    color: pink;
+    -webkit-text-stroke: 1.5px black;
+    font-size: 45px;
+    font-weight: 1000;
+    text-align: center;
+}
+
+.top_image h2 {
+    margin: 30px 0 0;
+    color: lightblue;
+    -webkit-text-stroke: 1.5px black;    
+    font-size: 40px;
+    font-weight: 1000;
+    text-align: center;
+}
+
+
+/*-----------------------
+MENU 
+-----------------------*/
+
+.menu {
+    width: 100%;
+    height: 50px;
+    background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    text-align: center;
+}
+
+.menu ul li {
+    list-style: none;
+    font-size: 16px;
+    display: block;
+    min-width: 200px;
+}
+
+.menu ul li:not(:last-child){
+    border-right:2px solid white;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color:white;
+}
+
+.menu ul li a:hover {
+    color: lightblue;
+}
+
+
+/*-----------------------
+キーワードからえらぶ 
+-----------------------*/
+
+#keyword-box {
+    display: flex;
+    justify-content: center;
+}
+
+#keyword-search {
+    width: 600px;
+    height: 40px;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+#keyword-button {
+    width: 80px;
+    font-size: 18px;    
+}
+
+
+/*-----------------------
+条件からえらぶ 
+-----------------------*/
+
+.situation-inner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 640px;
+    margin: 0 auto 30px;
+}
+
+#situation-top-border {
+    border-top: solid 2px #cacaca;
+}
+
+.situation-title {
+    width: 158px;
+    padding: 10px 64px 0 16px;
+    /* paddingのTopは10pxで合ってる？ */
+    border-bottom: solid 2px #cacaca;
+    border-right: solid 2px #cacaca;
+    line-height: 20px;
+    /* このline-hightは何処の事？ */
+}
+
+.situation-item {
+    width: 400px;
+    border-bottom: solid 2px #cacaca;
+    font-size: 14px;
+}
+
+.situation-ul li {
+    margin: 8px 0 8px 8px;
+}
+
+
+/*-----------------------
+ご当地からえらぶ 
+-----------------------*/
+
+.local-inner {
+    display: flex;
+    flex-wrap: wrap;
+    width: 640px;
+    margin: 0 auto 30px;
+}
+
+.local-title {
+    width: 100px;
+    padding: 10px 64px 0 16px;
+    margin: 15px 0px 15px 5px;
+}
+
+.local-item {
+    width: 400px;
+    font-size: 18px;
+    margin: 15px 0px 15px 5px;
+}
+
+.local-parts {
+    width: 400px;
+    height: 40px;
+}
+
+.local-ul li {
+    margin: 8px 0 8px 8px;
+}
+
+
+
+
+/*-----------------------
+人気商品からえらぶ
+-----------------------*/
+
+#popular-container {
+    width: 1100px;
+    height: 450px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px auto;
+}
+
+#popular-container>a {
+    display: block;
+    text-decoration: none;
+    color: #222222;
+}
+
+#popular-container>a:hover {
+    opacity: 0.5;
+}
+
+#popular-inner {
+    width: 300px;
+    height: 250px;
+    margin: 10px;
+}
+
+#popular-inner img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    filter: drop-shadow(7px 7px 7px #aaa);
+}
+
+#populars-inner-date {
+    margin: 30px 0 24px 0;
+    font-size: 13px;
+    text-align: right;
+}
+
+#popular-inner-text {
+    margin: 0;
+    font-size: 13px;
+    text-align: left;
+}
+      
+#modoru {
+    height: 50px;
+    width: 50px;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    border-radius: 100%;
+    margin: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: lightcoral;
+    padding: auto;
+    float:left;   
+}
+
+#modoru:hover {
+    opacity: 50%;
+}
+      
+#susumu {
+    height: 50px;
+    width: 50px;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    border-radius: 100%;
+    margin: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: lightcoral;
+    padding: auto;
+    float:right;  
+}
+
+#susumu:hover {
+    opacity: 50%;
+}
+
+
+
+/*-----------------------
+受け取れる場所をみる
+-----------------------*/
+
+#receivable-container {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    height: 600px;
+}
+
+#myMap {
+    box-shadow: 0 0 10px black;
+}
+
+#receivable-serch {
+    margin: 20px;
+}
+
+#address {
+    display: flex;
+    margin: 30px;
+    height: 30px;
+    width: 400px;
+}
+
+#address-search {
+    width: 300px;
+    margin-right: 5px;
+}
+
+#address-button {
+    width: 60px;
+}
+
+#postcode {
+    display: flex;
+    margin: 30px;
+    height: 30px;
+    width: 400px;
+}
+
+#postcode-search {
+    width: 300px;
+    margin-right: 5px;
+}
+
+#postcode-button {
+    width: 60px;
+}
+
+#content {
+    height: 320px;
+    margin: 30px;
+    overflow: auto;
+    border: solid 1px gray;
+    padding: 3px;
+    background-color: white;
+}
+
+
+
+
+/*-----------------------------------------------
+FOOTER
+-----------------------------------------------*/
+
+.footer {
+    height: 80px;
+    background: lightcoral;
+    margin: 140px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.footer small {
+    font-size: 14px;
+    color: white;
+}
+
+
+/* 松原さんに教えて貰った「ページトップへ戻る」 */
+.icon-up {
+    display: block;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 24px;
+}
+
+.btn-pagetop {
+    position: absolute;
+    top: -78px;
+    right: 0;
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #707070;
+    text-align: center;
+    text-decoration: none;
+}
